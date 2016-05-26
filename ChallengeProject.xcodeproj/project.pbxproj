@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E60326361CF7641E008B0E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326351CF7641E008B0E58 /* AppDelegate.swift */; };
-		E60326381CF7641E008B0E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326371CF7641E008B0E58 /* ViewController.swift */; };
 		E603263B1CF7641E008B0E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60326391CF7641E008B0E58 /* Main.storyboard */; };
 		E603263D1CF7641E008B0E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E603263C1CF7641E008B0E58 /* Assets.xcassets */; };
 		E60326401CF7641E008B0E58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603263E1CF7641E008B0E58 /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		E60326321CF7641E008B0E58 /* ChallengeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E60326351CF7641E008B0E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E60326371CF7641E008B0E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E603263A1CF7641E008B0E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E603263C1CF7641E008B0E58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E603263F1CF7641E008B0E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		E60326341CF7641E008B0E58 /* ChallengeProject */ = {
 			isa = PBXGroup;
 			children = (
+				E60326471CF764D4008B0E58 /* Other */,
+			);
+			path = ChallengeProject;
+			sourceTree = "<group>";
+		};
+		E60326471CF764D4008B0E58 /* Other */ = {
+			isa = PBXGroup;
+			children = (
 				E60326351CF7641E008B0E58 /* AppDelegate.swift */,
-				E60326371CF7641E008B0E58 /* ViewController.swift */,
 				E60326391CF7641E008B0E58 /* Main.storyboard */,
 				E603263C1CF7641E008B0E58 /* Assets.xcassets */,
 				E603263E1CF7641E008B0E58 /* LaunchScreen.storyboard */,
 				E60326411CF7641E008B0E58 /* Info.plist */,
 			);
-			path = ChallengeProject;
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E60326381CF7641E008B0E58 /* ViewController.swift in Sources */,
 				E60326361CF7641E008B0E58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +292,7 @@
 				E60326461CF7641E008B0E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
