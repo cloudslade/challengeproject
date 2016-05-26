@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // This is the configuration of the apps window. We are also setting our root view controller to UserTableViewController.
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.backgroundColor = .whiteColor()
+        window?.rootViewController = UserTableViewController()
+        window?.makeKeyAndVisible()
         return true
     }
 
