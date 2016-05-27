@@ -9,9 +9,11 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-    var nameLabel: UILabel!
+    var nameLabel =  UILabel(frame: CGRect(x: 0, y: 0, width: , height: 30))
     
-    func updateWithUser() {
+    func updateWithUser(user: User) {
+        nameLabel.text = user.name
+        contentView.addSubview(nameLabel)
         
     }
     
