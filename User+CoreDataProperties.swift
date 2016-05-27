@@ -19,7 +19,7 @@ extension User {
     @NSManaged var name: String
     @NSManaged var address: NSObject
     @NSManaged var phone: String
-    @NSManaged var company: NSObject
+    @NSManaged var company: [String: String]
     @NSManaged var website: String
 
 }

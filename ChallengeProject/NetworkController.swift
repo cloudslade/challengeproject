@@ -9,11 +9,13 @@
 import Foundation
 
 class NetworkController {
-    func dataTask(url: NSURL, completion: (data: NSData?) -> ()) {
+    static func performRequestForURL(url: NSURL, completion: (data: NSData?) -> ()) {
         let request = NSMutableURLRequest(URL: url)
         let session = NSURLSession.sharedSession()
-        let dataTask = session.dataTaskWithRequest(request) { (data, respone, error) in
+        let dataTask = session.dataTaskWithRequest(request) { (data, response, error) in
             if error != nil {
+                completion(data: nil)
+            } else {
                 completion(data: data)
             }
         }

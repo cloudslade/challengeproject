@@ -9,5 +9,10 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
+    var nameLabel: UILabel!
+    
+    func updateWithUser() {
+        
+    }
     
 }

@@ -18,6 +18,7 @@
 		E60326571CF7792D008B0E58 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326561CF7792D008B0E58 /* UserController.swift */; };
 		E603265B1CF784CB008B0E58 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326591CF784CB008B0E58 /* User+CoreDataProperties.swift */; };
 		E603265C1CF784CB008B0E58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603265A1CF784CB008B0E58 /* User.swift */; };
+		E60326601CF78838008B0E58 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603265F1CF78838008B0E58 /* Stack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E60326561CF7792D008B0E58 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = ../UserController.swift; sourceTree = "<group>"; };
 		E60326591CF784CB008B0E58 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E603265A1CF784CB008B0E58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
+		E603265F1CF78838008B0E58 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				E603263C1CF7641E008B0E58 /* Assets.xcassets */,
 				E603263E1CF7641E008B0E58 /* LaunchScreen.storyboard */,
 				E60326411CF7641E008B0E58 /* Info.plist */,
+				E603265F1CF78838008B0E58 /* Stack.swift */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				E60326541CF778F2008B0E58 /* NetworkController.swift in Sources */,
 				E60326521CF774D3008B0E58 /* Model.xcdatamodeld in Sources */,
 				E603265C1CF784CB008B0E58 /* User.swift in Sources */,
+				E60326601CF78838008B0E58 /* Stack.swift in Sources */,
 				E60326571CF7792D008B0E58 /* UserController.swift in Sources */,
 				E60326361CF7641E008B0E58 /* AppDelegate.swift in Sources */,
 				E603264C1CF77474008B0E58 /* UserDetailViewController.swift in Sources */,
