@@ -7,9 +7,10 @@
         <attribute name="id" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="phone" attributeType="String" syncable="YES"/>
+        <attribute name="userName" attributeType="String" syncable="YES"/>
         <attribute name="website" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="User" positionX="-63" positionY="-171" width="128" height="148"/>
+        <element name="User" positionX="-63" positionY="-171" width="128" height="163"/>
     </elements>
 </model>

@@ -66,8 +66,39 @@ class UserController {
         return NSURL(string: urlString)!
     }
     
-    func saveToPersistentStoregae() {
+    func removeUsers() {
+        let moc = Stack.sharedStack.managedObjectContext
+        let request = NSFetchRequest(entityName: "User")
         
+        do {
+            let yo = try moc.executeFetchRequest(request) as! [User]
+            for user in yo {
+                moc.deleteObject(user)
+                self.saveToPersistentStoregae()
+            }
+        } catch {
+            print("could not make fetch request")
+        }
+    }
+    
+    func saveToPersistentStoregae() {
+        let moc = Stack.sharedStack.managedObjectContext
+        do {
+            try moc.save()
+        } catch {
+            print("could not save")
+        }
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -17,9 +17,12 @@ class UserTableViewController: UITableViewController {
     }
     func checkForUsers() {
         // In here we will load the users
+        
+        // clear coreData of the users it has in it's storage.
+        UserController.sharedInstance.removeUsers()
         UserController.sharedInstance.loadUsers { (users) in
             // reload the tableview
-            
+            UserController.sharedInstance.saveToPersistentStoregae()
             self.tableView.reloadData()
             // stop the refrechcontroller from loasing
             
