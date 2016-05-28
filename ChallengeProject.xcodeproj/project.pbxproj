@@ -20,6 +20,7 @@
 		E60326601CF78838008B0E58 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603265F1CF78838008B0E58 /* Stack.swift */; };
 		E60326981CF8B850008B0E58 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326971CF8B850008B0E58 /* User+CoreDataProperties.swift */; };
 		E603269A1CF8BDCE008B0E58 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326991CF8BDCE008B0E58 /* PhotoController.swift */; };
+		E603269C1CF8E984008B0E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603269B1CF8E984008B0E58 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E603265F1CF78838008B0E58 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
 		E60326971CF8B850008B0E58 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E60326991CF8BDCE008B0E58 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		E603269B1CF8E984008B0E58 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				E60326351CF7641E008B0E58 /* AppDelegate.swift */,
 				E603263C1CF7641E008B0E58 /* Assets.xcassets */,
 				E603263E1CF7641E008B0E58 /* LaunchScreen.storyboard */,
+				E603269B1CF8E984008B0E58 /* Main.storyboard */,
 				E60326411CF7641E008B0E58 /* Info.plist */,
 				E603265F1CF78838008B0E58 /* Stack.swift */,
 			);
@@ -186,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E603269C1CF8E984008B0E58 /* Main.storyboard in Resources */,
 				E60326401CF7641E008B0E58 /* LaunchScreen.storyboard in Resources */,
 				E603263D1CF7641E008B0E58 /* Assets.xcassets in Resources */,
 			);

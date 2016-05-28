@@ -17,9 +17,9 @@ extension User {
     @NSManaged var email: String
     @NSManaged var id: NSNumber
     @NSManaged var name: String
-    @NSManaged var address: NSObject
+    @NSManaged var address: [String: AnyObject]
     @NSManaged var phone: String
-    @NSManaged var company: NSObject
+    @NSManaged var company: [String: String]
     @NSManaged var website: String
     @NSManaged var userName: String
 

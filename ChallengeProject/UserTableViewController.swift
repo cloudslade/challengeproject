@@ -9,15 +9,22 @@
 import UIKit
 
 class UserTableViewController: UITableViewController {
+    private var indexPath: NSIndexPath?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configurePullToRefresh()
         self.tableView.registerClass(UserTableViewCell.self, forCellReuseIdentifier: "userCell")
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        if let indexPath = indexPath  {
+            self.tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.Top)
+        }
+    }
+    
     func checkForUsers() {
         // In here we will load the users
-        
         // clear coreData of the users it has in it's storage.
         UserController.sharedInstance.removeUsers()
         UserController.sharedInstance.loadUsers { (users) in
@@ -33,9 +40,14 @@ class UserTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! UserTableViewCell
-//        let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "userCell") as! UserTableViewCell
         let user = UserController.sharedInstance.users[indexPath.row]
-        cell.updateWithUser(user)
+        cell.textLabel?.text = user.userName
+        cell.detailTextLabel?.text = user.name
+        cell.delegate = self
+        if self.indexPath == nil {
+            self.tableView.selectRowAtIndexPath(indexPath, animated: false, scrollPosition: UITableViewScrollPosition.Top)
+            self.indexPath = indexPath
+        }
         return cell
     }
     
@@ -48,7 +60,7 @@ class UserTableViewController: UITableViewController {
             nilCaseLabel.textAlignment = NSTextAlignment.Center
             nilCaseLabel.font = UIFont(name: "Palatino-Italic", size: 20)
             self.tableView.backgroundView = nilCaseLabel
-//            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+            //            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
             return 1
         } else {
             self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
@@ -60,15 +72,24 @@ class UserTableViewController: UITableViewController {
         return UserController.sharedInstance.users.count
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        //
-    }
-    
     func configurePullToRefresh() {
         self.refreshControl = UIRefreshControl()
         self.refreshControl?.backgroundColor = UIColor.grayColor()
         self.refreshControl?.tintColor = UIColor.whiteColor()
         self.refreshControl?.addTarget(self, action: #selector(checkForUsers), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func cellTapped() {
+        // find the highlighted cell
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+            self.indexPath = indexPath
+            let destinationVC = UserDetailViewController()
+            let user = UserController.sharedInstance.users[indexPath.row]
+            destinationVC.user = user
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+            // place it on the navController
+            // perform segue
+        }
     }
     
 }
