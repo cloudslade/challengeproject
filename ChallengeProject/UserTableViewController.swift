@@ -40,6 +40,7 @@ class UserTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! UserTableViewCell
+//        cell.selectionStyle = UITableViewCellSelectionStyle.None
         let user = UserController.sharedInstance.users[indexPath.row]
         cell.textLabel?.text = user.userName
         cell.detailTextLabel?.text = user.name
