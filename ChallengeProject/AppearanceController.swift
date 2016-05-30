@@ -10,10 +10,17 @@ import UIKit
 
 class AppearanceController {
     static func configureAppearance() {
-        
+        UINavigationBar.appearance().barTintColor = UIColor.queGreen()
     }
 }
 
 extension UIColor {
+    static func queGreen() -> UIColor {
+        return UIColor(colorLiteralRed: 0.592, green: 0.780, blue: 0.631, alpha: 1.00)
+    }
+    
+    static func queGray() -> UIColor {
+        return UIColor(colorLiteralRed: 0.861, green: 0.861, blue: 0.861, alpha: 1.00)
+    }
     
 }

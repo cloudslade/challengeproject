@@ -9,6 +9,8 @@
 import Foundation
 
 class NetworkController {
+    
+    // performs a network request based on a specified url
     static func performRequestForURL(url: NSURL, completion: (data: NSData?) -> ()) {
         let request = NSMutableURLRequest(URL: url)
         let session = NSURLSession.sharedSession()

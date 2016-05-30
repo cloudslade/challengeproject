@@ -2,15 +2,16 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "jellyfish.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "cellGradientBackground@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "cellGradientBackground@3x.png",
       "scale" : "3x"
     }
   ],

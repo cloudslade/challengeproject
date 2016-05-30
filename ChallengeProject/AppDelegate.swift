@@ -14,13 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // This is the configuration of the apps window. We are also setting our root view controller to UserTableViewController.
+        // This is the configuration of the apps window. We are also setting the initial view controllers of the app.
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.backgroundColor = .whiteColor()
         let rootNavController = UINavigationController()
         rootNavController.pushViewController(UserTableViewController(), animated: true)
         window?.rootViewController = rootNavController
         window?.makeKeyAndVisible()
+        AppearanceController.configureAppearance()
         return true
     }
 

@@ -9,6 +9,7 @@
 import Foundation
 import CoreData
 
+// Our sutom Core Data Stack. It prefer having this in it's own file so it does not clutter the AppDelegate file.
 class Stack {
     static let sharedStack = Stack()
     

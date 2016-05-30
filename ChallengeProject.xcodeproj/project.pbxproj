@@ -16,11 +16,11 @@
 		E60326521CF774D3008B0E58 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E60326501CF774D3008B0E58 /* Model.xcdatamodeld */; };
 		E60326541CF778F2008B0E58 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326531CF778F2008B0E58 /* NetworkController.swift */; };
 		E60326571CF7792D008B0E58 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326561CF7792D008B0E58 /* UserController.swift */; };
-		E603265C1CF784CB008B0E58 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603265A1CF784CB008B0E58 /* User.swift */; };
 		E60326601CF78838008B0E58 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603265F1CF78838008B0E58 /* Stack.swift */; };
-		E60326981CF8B850008B0E58 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326971CF8B850008B0E58 /* User+CoreDataProperties.swift */; };
 		E603269A1CF8BDCE008B0E58 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60326991CF8BDCE008B0E58 /* PhotoController.swift */; };
 		E603269E1CFA2AC0008B0E58 /* AppearanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603269D1CFA2AC0008B0E58 /* AppearanceController.swift */; };
+		E6F9C8C91CFBE8EF00CFA561 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F9C8C71CFBE8EF00CFA561 /* User.swift */; };
+		E6F9C8CB1CFBE9E100CFA561 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F9C8CA1CFBE9E100CFA561 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +35,11 @@
 		E60326511CF774D3008B0E58 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		E60326531CF778F2008B0E58 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		E60326561CF7792D008B0E58 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserController.swift; path = ../UserController.swift; sourceTree = "<group>"; };
-		E603265A1CF784CB008B0E58 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../User.swift; sourceTree = "<group>"; };
 		E603265F1CF78838008B0E58 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
-		E60326971CF8B850008B0E58 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "../User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E60326991CF8BDCE008B0E58 /* PhotoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		E603269D1CFA2AC0008B0E58 /* AppearanceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceController.swift; sourceTree = "<group>"; };
+		E6F9C8C71CFBE8EF00CFA561 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E6F9C8CA1CFBE9E100CFA561 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		E60326341CF7641E008B0E58 /* ChallengeProject */ = {
 			isa = PBXGroup;
 			children = (
-				E60326471CF764D4008B0E58 /* Other */,
+				E60326471CF764D4008B0E58 /* Supporting Files */,
 				E60326581CF77955008B0E58 /* Model */,
 				E603264F1CF77497008B0E58 /* Views */,
 				E603264A1CF77444008B0E58 /* ViewControllers */,
@@ -81,7 +81,7 @@
 			path = ChallengeProject;
 			sourceTree = "<group>";
 		};
-		E60326471CF764D4008B0E58 /* Other */ = {
+		E60326471CF764D4008B0E58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				E60326351CF7641E008B0E58 /* AppDelegate.swift */,
@@ -91,7 +91,7 @@
 				E603265F1CF78838008B0E58 /* Stack.swift */,
 				E603269D1CFA2AC0008B0E58 /* AppearanceController.swift */,
 			);
-			name = Other;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		E603264A1CF77444008B0E58 /* ViewControllers */ = {
@@ -124,8 +124,8 @@
 		E60326581CF77955008B0E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E60326971CF8B850008B0E58 /* User+CoreDataProperties.swift */,
-				E603265A1CF784CB008B0E58 /* User.swift */,
+				E6F9C8CA1CFBE9E100CFA561 /* User+CoreDataProperties.swift */,
+				E6F9C8C71CFBE8EF00CFA561 /* User.swift */,
 				E60326501CF774D3008B0E58 /* Model.xcdatamodeld */,
 			);
 			name = Model;
@@ -201,17 +201,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F9C8C91CFBE8EF00CFA561 /* User.swift in Sources */,
 				E603264E1CF77493008B0E58 /* UserTableViewCell.swift in Sources */,
+				E6F9C8CB1CFBE9E100CFA561 /* User+CoreDataProperties.swift in Sources */,
 				E603269E1CFA2AC0008B0E58 /* AppearanceController.swift in Sources */,
 				E60326491CF7743D008B0E58 /* UserTableViewController.swift in Sources */,
 				E60326541CF778F2008B0E58 /* NetworkController.swift in Sources */,
 				E60326521CF774D3008B0E58 /* Model.xcdatamodeld in Sources */,
-				E603265C1CF784CB008B0E58 /* User.swift in Sources */,
 				E603269A1CF8BDCE008B0E58 /* PhotoController.swift in Sources */,
 				E60326601CF78838008B0E58 /* Stack.swift in Sources */,
 				E60326571CF7792D008B0E58 /* UserController.swift in Sources */,
 				E60326361CF7641E008B0E58 /* AppDelegate.swift in Sources */,
-				E60326981CF8B850008B0E58 /* User+CoreDataProperties.swift in Sources */,
 				E603264C1CF77474008B0E58 /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
