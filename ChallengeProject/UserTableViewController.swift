@@ -41,9 +41,9 @@ class UserTableViewController: UITableViewController {
         // if we have no users we must display our nill case which prompts the user to refresh their data
         // Otherwise we change our tableView style to have single seperator lines
         if hasUsers() {
-            configureTableViewForNilCase()
-        } else {
             configureTableViewForUsers()
+        } else {
+            configureTableViewForNilCase()
         }
         return 1
     }
